@@ -1,77 +1,197 @@
+/* Sección Principal */
+.main-content {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.main-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* Contenedor de las películas - centrado de las tarjetas */
+.movie-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+/* Tarjetas de película */
+.movie-card {
+    background-color: #490205;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 200px 100px rgba(247, 240, 240, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+    width: 800px; /* Controla el tamaño de las tarjetas */
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 200px 100px white;
+}
+
+.movie-card img {
+    max-width: 100%;
+    border: 5px solid #100b09;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.movie-card h3 {
+    font-size: 1.6rem;
+    color: #f9ebeb;
+    margin: 10px 0;
+}
+
+.movie-card p {
+    font-size: 1rem;
+    color: #faf9f9;
+    margin-top: 10px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #1c1c1c;
+    text-align: center;
+    padding: 40px;
+    color: white;
+    margin-top: 50px;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 1rem;
+}
+/* Tarjetas de película */
+.movie-card {
+    background-color: #490205;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 200px 100px rgba(247, 240, 240, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+    width: 90vw; /* Esto ajusta el tamaño de las tarjetas al 90% del ancho de la pantalla */
+    max-width: 1200px; /* Añadí un máximo para que no crezcan demasiado en pantallas grandes */
+}
+
+/* Si prefieres un poco menos que el 90% */
+.movie-card {
+    background-color: #490205;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 200px 100px rgba(247, 240, 240, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+    width: 85vw; /* Ajusta esto a tu preferencia */
+    max-width: 1200px; /* Limita el ancho máximo */
+}
+
+
+
+
+/* Estilos generales */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #fff5e1;
+    color: #fbf3f3;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header .logo h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f1e6d3;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
 h1 {
-    font-size: 5em; /* Tamaño grande de la fuente */
-    font-family: 'Impact', sans-serif; /* Fuente audaz y contundente */
-    font-weight: bold; /* Peso de la fuente en negrita */
-    color: transparent; /* El texto será transparente para ver el gradiente de fondo */
-    background: linear-gradient(45deg, #ff007f, #ff9900, #00ffcc); /* Gradiente de varios colores vibrantes */
-    background-clip: text; /* El gradiente se aplica solo al texto */
-    -webkit-background-clip: text; /* Para asegurar compatibilidad en WebKit */
-    text-align: center; /* Centrar el texto */
-    text-transform: uppercase; /* Convertir todo el texto a mayúsculas */
-    letter-spacing: 4px; /* Espaciado entre las letras */
-    padding: 20px; /* Espaciado interno */
-    margin: 20px 0; /* Espaciado arriba y abajo */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.8), 0 0 15px rgba(255, 0, 0, 0.8); /* Sombra intensa */
-    transition: transform 0.3s ease, text-shadow 0.3s ease; /* Transiciones suaves */
+    font-size: 5em; 
+    font-family: 'Impact', sans-serif; 
+    font-weight: bold; 
+    color: transparent; 
+    background: linear-gradient(45deg, #ff007f, #ff9900, #00ffcc);
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    text-align: center; 
+    text-transform: uppercase; 
+    letter-spacing: 4px; 
+    padding: 20px;
+    margin: 20px 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.8), 0 0 15px rgba(255, 0, 0, 0.8); 
+    transition: transform 0.3s ease, text-shadow 0.3s ease; 
 }
 
 h1:hover {
-    transform: scale(1.1); /* Aumenta el tamaño del texto al hacer hover */
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 1); /* Aumenta la sombra al pasar el ratón */
+    transform: scale(1.1); 
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 1); 
 }
 
-h2 {
-    font-size: 4em; /* Tamaño grande de la fuente */
-    font-family: 'Poppins', sans-serif; /* Fuente moderna y limpia */
-    font-weight: bold; /* Peso de la fuente en negrita */
-    color: transparent; /* El texto será transparente para ver el gradiente de fondo */
-    background: linear-gradient(45deg, #ff007f, #ff9900, #00ffcc); /* Gradiente de colores vibrantes */
-    background-clip: text; /* El gradiente se aplica solo al texto */
-    -webkit-background-clip: text; /* Para asegurar compatibilidad en WebKit */
-    text-align: center; /* Centrar el texto */
-    text-transform: uppercase; /* Convertir todo el texto a mayúsculas */
-    letter-spacing: 4px; /* Espaciado entre las letras */
-    padding: 15px; /* Espaciado interno */
-    margin: 20px 0; /* Espaciado arriba y abajo */
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.6), 0 0 15px rgba(255, 0, 0, 0.6); /* Sombra fuerte */
-}
 
 
 p {
-    display: flex; /* Usamos Flexbox para organizar el contenido en fila (horizontales) */
-    align-items: center; /* Centra el contenido verticalmente (texto y gif) */
-    gap: 15px; /* Espacio entre el texto y el gif */
+    display: flex; 
+    
+    gap: 15px; 
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ffffff; /* Borde simple */
-    border-radius: 5px; /* Bordes redondeados */
-    background-color: rgba(0, 0, 0, 0.2); /* Fondo sutil */
+    border: 1px solid #ffffff; 
+    border-radius: 5px; 
+    background-color: rgba(0, 0, 0, 0.2); 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    color: #f5f5f5; /* Color del texto */
+    color: #f5f5f5; 
 }
 
 p img {
-    width: 50px; /* Tamaño del gif */
-    height: 50px; /* Tamaño del gif */
-    border-radius: 5px; /* Bordes redondeados en el gif */
+    width: 50px; 
+    height: 50px; 
+    border-radius: 5px; 
 }
 
 
 
 
 p {
-    border: 1px solid #f23a40;  /* Borde delgado de 1px en color blanco */
+    border: 1px solid #f23a40;  
     padding: 1px;
     margin: 1px 0;
-    border-radius: 0px;  /* Bordes redondeados para suavizar el borde */
-    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);  /* Sombra suave debajo del borde */
-    color: #f5f5f5;  /* Color del texto */
-    transition: all 0.3s ease;  /* Transición suave */
+    border-radius: 0px;  
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);  
+    color: #f5f5f5; 
+    transition: all 0.3s ease;  
 }
 
 p:hover {
-    border-color: #060601;  /* Cambio de color del borde al hacer hover */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  /* Aumenta la sombra al hacer hover */
+    border-color: #060601;  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  
 }
 
 
@@ -107,7 +227,7 @@ body > * {
 
 header {
     background-color: rgb(253, 252, 252);
-    background-image: url(https://i.pinimg.com/originals/77/48/5c/77485ceb6d45fa71cfc6301cfb2cb215.gif);
+    background-image: url(https://i.pinimg.com/originals/c1/69/c6/c169c67cc8441ee49942af253e2c4636.gif);
 }
 
 header .logo {
@@ -147,24 +267,7 @@ nav a:hover {
     border-radius: 5px;
 }
 
-#hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 90vh;
-    background-image: linear-gradient(
-        0deg,
-        rgba(102, 3, 6, 0.5),
-        rgb(0, 0, 0, 0.5)
-    ),
-    url("cine.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    color: rgb(88, 9, 5);
-}
+
 
 #hero h1 {
     font-size: 3.5em;
@@ -276,19 +379,29 @@ p {
 }
 
 
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2.5em;
-        color: #ffcc00; 
-    }
 
-    h2 {
-        font-size: 2em;
-        color: #d40000;
-    }
-
-    p {
-        font-size: 1em;
-        color: #ffffff; 
-    }
+header .logo h1 {
+    font-size: 3rem;
+    margin: 0;
 }
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f1e6d3;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
